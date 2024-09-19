@@ -34,7 +34,7 @@ namespace Polimorfismo {
       } else if (Perfomance < this.BonusPerformance) {
 	FinalSalary = this.Salary;
       } else {
-	FinalSalary = Decimal.Multiply(this.Salary, 0.5M);
+	FinalSalary = Decimal.Multiply(this.Salary, BonusPercentage);
       }
       
       return FinalSalary;
@@ -56,7 +56,7 @@ namespace Polimorfismo {
       } else if (Perfomance < this.BonusPerformance) {
 	FinalSalary = this.Salary;
       } else {
-	FinalSalary = Decimal.Multiply(this.Salary, 0.5M);
+	FinalSalary = Decimal.Multiply(this.Salary, BonusPercentage);
       }
       
       return FinalSalary;
